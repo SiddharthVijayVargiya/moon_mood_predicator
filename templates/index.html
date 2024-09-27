@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moon Data App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Moon Data App</h1>
+    <form method="post">
+        <label for="mood">How is your mood (good, bad, aggression, sad, frustrated):</label>
+        <input type="text" name="mood" required><br>
+
+        <label for="constipated">Are you constipated? (yes/no):</label>
+        <input type="text" name="constipated"><br>
+
+        <label for="gastric_acid">Do you have gastric acid? (yes/no):</label>
+        <input type="text" name="gastric_acid"><br>
+
+        <label for="sleep_time">What time did you sleep (24-hour format, e.g., 23:30):</label>
+        <input type="text" name="sleep_time"><br>
+
+        <label for="wake_time">At what time did you wake up (24-hour format, e.g., 07:00):</label>
+        <input type="text" name="wake_time"><br>
+
+        <label for="location">Enter your current location:</label>
+        <input type="text" name="location"><br>
+
+        <label for="allergic_reaction">Is your allergic reaction activated? (yes/no):</label>
+        <input type="text" name="allergic_reaction"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
